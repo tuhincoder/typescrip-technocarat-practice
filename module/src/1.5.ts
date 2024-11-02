@@ -1,7 +1,7 @@
 // object type
 
 const user: {
-    company: 'programming hero';
+    readonly company: string;
     firstName: string;
     middleName: string;
     lastName: string;
@@ -30,7 +30,7 @@ const friendsInfo: {
 }
 
 const myInformation: {
-    companyName: 'programming hero';
+    readonly companyName: string; // literal types
     firstName: string;
     middleName: string;
     lastName: string;
@@ -44,3 +44,4 @@ const myInformation: {
     isMarried: false
 
 }
+
