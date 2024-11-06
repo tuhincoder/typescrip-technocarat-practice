@@ -2,39 +2,87 @@
     //
     // oop  object oriented programming
 
-    // class Animal {
-
-    //     constructor(public name: string, public species: string, public sound: string) {
-    //     }
-    //     makSound() {
-    //         console.log(`The ${this.name}  says ${this.sound}`);
-    //     }
-    // }
-    // const dog = new Animal('garman shepay', 'dog', 'ghew ghew')
-    // const cat = new Animal('bangaldeshi cat', 'cat', 'mew mew')
-    // cat.makSound()
 
 
 
     class Animal {
+        // name: string;
+        // species: string;
+        // sound: number;
 
-        constructor(public name: string, public species: string, public sound: string, public height: number) {
 
+        constructor(public name: string, public species: string, public sound: number) {
+
+            // this.name = name;
+            // this.species = species;
+            // this.sound = sound
         }
+
         mackSound() {
-            console.log(`the ${this.name} says ${this.sound} and height ${this.height}`);
+            console.log(`the ${this.name} barishal ${this.species} ${this.sound}`);
         }
+
+
     }
 
-
-    const cat = new Animal('autralian cute cat', 'cat', 'meaw meaw', 45)
-    const dog = new Animal('german animal', 'dog', 'ghew ghew', 1.2)
+    const cat = new Animal('bangladeshi cat', 'cat', 45)
     cat.mackSound()
 
 
+    // -------------------------------
+    class Mobile {
+        constructor(public name: string, public brand: string, public publicationDate: number) { }
+
+        mackPhone() {
+            console.log(`steeb jobs ${this.name} brnd ${this.brand} publish date ${this.publicationDate}`);
+        }
+
+    }
+
+    const iPhon = new Mobile('the phone is iPhone', 'apple', 2020)
+    iPhon.mackPhone()
+
+
+    class Bird {
+        constructor(public name: string, public beautiful: string, public weight: number) { }
+
+
+        birdFly() {
+            console.log(`the ${this.name} so ${this.beautiful} w ${this.weight}`);
+        }
+    }
+
+    const doel = new Bird('doel', 'so beautiful', 1.5)
+    doel.birdFly();
+
+
+
+    class LapTop {
+        constructor(public name: string, public brand: string, public companyLocation: string) {
+
+        }
+
+        acerLaptop() {
+            console.log(`the ${this.name} brand ${this.brand} company location ${this.companyLocation}`);
+        }
+
+    }
+
+    const acer = new LapTop('acer', 'Aspire', 'taiwan')
+    acer.acerLaptop()
 
 
 
 
-    //
+
+
+
+
+
+
+
+
+
+
+
 }
